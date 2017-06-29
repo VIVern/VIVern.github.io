@@ -1,0 +1,460 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgb(202,75,246);
+  overflow-y: hidden;
+}
+
+/*--------------------------------Загрузочный -----------------*/
+
+.mainMenu {
+  width: 500px;
+  height: 300px;
+  background-color: rgba(255,255,255,.7);
+  margin: 15% auto;
+  padding-top: 8%;
+  box-sizing: border-box;
+}
+
+.startButton {
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  background-color: green;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding-top: 11px;
+  display:block;
+}
+
+.startButton:hover {
+  cursor: pointer;
+}
+
+
+.mainMenu ul {
+  list-style: none;
+  margin: 0 auto;
+  display: none;
+}
+
+.choseColorButton {
+  padding-top: 15px;
+  float: left;
+  width: 100px;
+  height:  50px;
+  margin-right: 25px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.choseColorButton:first-child {
+  margin-left: 75px;
+}
+
+.choseColorButton:hover {
+  cursor: pointer;
+}
+
+#color_1 {
+  background-color: blue;
+}
+
+#color_2 {
+  background-color: yellow;
+}
+
+#color_3 {
+  background-color: red;
+}
+
+/*--------------------------------стили трех спинеров------------*/
+
+.blueSpiner {
+  background-color: black;
+  position: relative;
+  margin: 250px auto;
+  width: 50px;
+  height: 50px;
+  border: 14px solid blue;
+  border-radius: 50%;
+  display:none;
+}
+
+.blueSpiner:after {
+  background-color: blue;
+  position: absolute;
+  display: inline-block;
+  content: '';
+  margin: -19px 51px;
+  width: 50px;
+  height: 50px;
+  border: 7px solid blue;
+  border-radius: 50%;
+
+  box-shadow:  -103px -27px 0px -17px black,
+               -72px 70px blue,
+               -104px -27px blue;
+}
+
+.blueSpiner:before {
+  background-color: rgb(202,75,246);
+  position: absolute;
+  display: inline-block;
+  content: '';
+  margin: -24.5px -30px;
+  width: 20px;
+  height: 20px;
+  border-radius:  50%;
+
+  box-shadow: 31.5px 97.5px 0px 0px rgb(202,75,246),
+              104.5px 27px 0px 0px rgb(202,75,246),
+              105px 27px 0px 5px black,
+              32px 98px 0px 5px black;
+
+  z-index: 98;
+}
+
+.blueSpiner:hover {
+  cursor: pointer;
+}
+
+/*-------*/
+
+.yellowSpiner {
+  background-color: black;
+  position: relative;
+  margin: 250px auto;
+  width: 50px;
+  height: 50px;
+  border: 14px solid yellow;
+  border-radius: 50%;
+  display: none;
+}
+
+.yellowSpiner:after {
+  background-color: yellow;
+  position: absolute;
+  display: inline-block;
+  content: '';
+  margin: -19px 51px;
+  width: 50px;
+  height: 50px;
+  border: 7px solid yellow;
+  border-radius: 50%;
+
+  box-shadow:  -103px -27px 0px -17px black,
+               -72px 70px yellow,
+               -104px -27px yellow;
+}
+
+.yellowSpiner:before {
+  background-color: rgb(202,75,246);
+  position: absolute;
+  display: inline-block;
+  content: '';
+  margin: -24.5px -30px;
+  width: 20px;
+  height: 20px;
+  border-radius:  50%;
+
+  box-shadow: 31.5px 97.5px 0px 0px rgb(202,75,246),
+              104.5px 27px 0px 0px rgb(202,75,246),
+              105px 27px 0px 5px black,
+              32px 98px 0px 5px black;
+
+  z-index: 98;
+}
+
+.yellowSpiner:hover {
+  cursor: pointer;
+}
+
+/*-------*/
+
+.redSpiner {
+  background-color: black;
+  position: relative;
+  margin: 250px auto;
+  width: 50px;
+  height: 50px;
+  border: 14px solid red;
+  border-radius: 50%;
+  display: none;
+
+}
+
+.redSpiner:after {
+  background-color: red;
+  position: absolute;
+  display: inline-block;
+  content: '';
+  margin: -19px 51px;
+  width: 50px;
+  height: 50px;
+  border: 7px solid red;
+  border-radius: 50%;
+
+  box-shadow:  -103px -27px 0px -17px black,
+               -72px 70px red,
+               -104px -27px red;
+}
+
+.redSpiner:before {
+  background-color: rgb(202,75,246);
+  position: absolute;
+  display: inline-block;
+  content: '';
+  margin: -24.5px -30px;
+  width: 20px;
+  height: 20px;
+  border-radius:  50%;
+
+  box-shadow: 31.5px 97.5px 0px 0px rgb(202,75,246),
+              104.5px 27px 0px 0px rgb(202,75,246),
+              105px 27px 0px 5px black,
+              32px 98px 0px 5px black;
+
+  z-index: 98;
+}
+
+.redSpiner:hover {
+  cursor: pointer;
+}
+
+.broken {
+  background-color: black;
+  position: relative;
+  margin: 400px 900px;
+  width: 50px;
+  height: 50px;
+  border: 14px solid red;
+  border-radius: 50%;
+  display: none;
+
+}
+
+.broken:after {
+  background-color: red;
+  position: absolute;
+  display: inline-block;
+  content: '';
+  margin: -19px 51px;
+  width: 50px;
+  height: 50px;
+  border: 7px solid red;
+  border-radius: 50%;
+
+  box-shadow:  -20px -201px 0px -17px black,
+               -296px 210px red,
+               -20px -201px red;
+}
+
+.broken:before {
+  background-color: rgb(202,75,246);
+  position: absolute;
+  display: inline-block;
+  content: '';
+  margin: -199.5px 53px;
+  width: 20px;
+  height: 20px;
+  border-radius:  50%;
+
+  box-shadow: -276.5px 410.5px 0px 0px rgb(202,75,246),
+              20.5px 201px 0px 0px rgb(202,75,246),
+              21px 202px 0px 5px black,
+              -276px 411px 0px 5px black;
+
+  z-index: 98;
+}
+
+
+/*------------------------------------------интерфейсные стили-------*/
+
+.speed {
+  position: absolute;
+  width: 700px;
+  top: 100px;
+  left: 10%;
+  text-align: left;
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  display: none;
+}
+
+.time {
+  position: absolute;
+  width: 690px;
+  top: 100px;
+  left: 55%;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  display: none;
+}
+
+.stopButton {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  background-color: red;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 25px;
+  bottom: 100px;
+  left: 35%;
+  display: none;
+}
+
+.stopButton:hover {
+  cursor: pointer;
+}
+.stopButton::selection {
+  background: none;
+}
+
+.resetButton {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  background-color: blue;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 25px;
+  bottom: 100px;
+  left: 55%;
+  display: none;
+}
+
+.resetButton:hover {
+  cursor: pointer;
+}
+.resetButton::selection {
+  background: none;
+}
+
+
+img {
+  width: 0px;
+  position: absolute;
+  top: 35%;
+  left: 43%;
+  display: none;
+}
+
+img::selection {
+  background-color: transparent;
+}
+
+.gameOver {
+  width: 300px;
+  position: absolute;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 28px;
+  top: 200px;
+  left: 190px;
+  display: none;
+}
+
+
+/*------------------массив динамика №1----------------------------
+ul {
+  list-style: none;
+}
+
+li{
+  margin-right: 20px;
+  float: left;
+}
+
+p{
+  float: left;
+}
+
+#max {
+  display:none;
+}
+
+#min {
+  display: none;
+}
+
+#del {
+  display: none;
+}
+
+
+
+ul {
+  list-style: none;
+}
+
+li{
+  float:left;
+  width: 200px;
+  min-height: 50px;
+  text-align: center;
+  padding-top: 17px;
+}
+
+#tab1{
+  background-color: red;
+}
+
+#tab2 {
+  background-color: grey;
+}
+
+#tab3 {
+  background-color: grey;
+}
+
+.content {
+  position: absolute;
+  width: 1000px;
+  min-height: 500px;
+
+}
+
+#content1 {
+  top:66px;
+  left: 48px;
+  background: red;
+}
+
+#content2 {
+  display: none;
+  top:66px;
+  left: 48px;
+  background-color: blue;
+}
+
+#content3 {
+  display:none;
+  top:66px;
+  left:48px;
+  background-color: yellow;
+}
+*/

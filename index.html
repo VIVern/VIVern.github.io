@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<!-- массив динамика №1
+	<ul>
+		<li id="add">add</li>
+		<li id="show">show</li>
+		<li id="max">Max</li>
+		<li id="min">Min</li>
+		<li id="del">Delete</li>
+	</ul>
+	<p id="massage"></p>
+	<p id="massageMax"><p>
+	<p id="massageMin"></p>
+-->
+<!-- загрузочный экран -->
+	<div id="mainMenu" class="mainMenu">
+		<div id="startButton" class="startButton">Start spin</div>
+		<ul id="choseColorMenu">
+			<li class="choseColorButton" id="color_1">blue</li>
+			<li class="choseColorButton" id="color_2">yellow</li>
+			<li class="choseColorButton" id="color_3">red</li>
+		</ul>
+	</div>
+
+
+	<!-- оснонвная работа спинеров -->
+	<p id="speedCounter" class="speed">Скорость (об/мин): 0</p>
+	<p id="timeCounter" class="time">До остановки 0 сек</p>
+	<div id="stopButton" class="stopButton">Stop</div>
+	<div id="resetButton" class="resetButton">Reset</div>
+	<div id="blueSpiner" class="blueSpiner" ></div>
+	<div id="yellowSpiner" class="yellowSpiner" ></div>
+	<div id="redSpiner" class="redSpiner" ></div>
+	<div class="broken" id="broken"></div>
+
+	<img src="images/gameover.jpg" alt="bicha" id="bicha" class="bicha">
+	<p id="gameOver" class="gameOver">я бичила путана дрочила и я сломал твой спинер.<br> game over</p>
+<!-- tab меню
+	<ul>
+		<li id="tab1">Открыта</li>
+		<li id="tab2">Показать вкладку 2</li>
+		<li id="tab3">Показать вкладку 3</li>
+	</ul>
+	<div id="content1" class="content"></div>
+	<div id="content2" class="content"></div>
+	<div id="content3" class="content"></div>
+-->
+
+ <script src="boot.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
