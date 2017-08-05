@@ -72,9 +72,22 @@ body {
   margin-bottom: 70px;
 }
 
+
 .stopButton {
   position: absolute;
   bottom: 5%;
   left:50%;
   margin: 70px 0 0 -145px;
+}
+
+
+.stats {
+  width: 290px;
+  height: 130px;
+  margin: 0 auto;
+  background: rgba(255,255,255, .3);
+  border: 2px solid #000;
+  border-radius: 5px;
+  color: #000;
+  transition: width .8s ease-in-out , height .8s ease-in-out;
 }
