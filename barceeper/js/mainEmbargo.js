@@ -14,8 +14,10 @@ function stopWork() {
 
   setTimeout(function(){
     document.querySelector('.statButton').innerText = "stats";
-    document.querySelector('.statButton').classList.add('buttons');
-    document.querySelector('.statButton').classList.remove('stats');
+    document.querySelector('.statButton').style.width="290px";
+    document.querySelector('.statButton').style.height="130px";
+    document.querySelector('.statButton').classList.toggle('buttons');
+    document.querySelector('.statButton').classList.toggle('stats');
   }, 5000);
 }
 
