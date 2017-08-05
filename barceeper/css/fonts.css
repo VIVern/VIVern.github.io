@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "openSans";
+  src: url('../fonts/Open_Sans_IE/OpenSans-Regular.eot'), url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: "openSansB";
+  src: url('../fonts/Open_Sans_IE/OpenSans-Bold.eot'), url('../fonts/Open_Sans/OpenSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: "openSansL";
+  src: url('../fonts/Open_Sans_IE/OpenSans-Light.eot'), url('../fonts/Open_Sans/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: "openSansI";
+  src: url('../fonts/Open_Sans_IE/OpenSans-Italic.eot'), url('../fonts/Open_Sans/OpenSans-Italic.ttf');
+}

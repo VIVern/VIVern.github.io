@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../images/embargoBg.jpg);
+  background-size: 100% auto;
+}
+
+#start {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 150px;
+  height: 80px;
+  background: green;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 25px;
+}
+
+#end {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  width: 150px;
+  height: 80px;
+  background: red;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 25px;
+}
+
+.hide {
+  display: none;
+}
