@@ -18,6 +18,14 @@ body {
   background: url('../images/pattern.png');
 }
 
+h2 {
+  font-size: 30px;
+  font-family: "openSansB";
+  padding: 10px 0 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .close {
   visibility: hidden;
 }
@@ -48,20 +56,17 @@ body {
 
 .exit:hover {
   cursor: pointer;
+  background: url('../images/exitA.png') 60% 50% no-repeat,
+              rgba(0,0,0, 1);
 }
 
 .buttons {
   margin: 0 auto;
   width: 290px;
   height: 130px;
-  background: rgba(255,255,255, .3);
   border: 2px solid #000;
   border-radius: 5px;
   color: #000;
-  font-size: 36px;
-  font-family: "openSansB";
-  text-align: center;
-  line-height: 120px;
   transition: width .8s ease-in-out , height .8s ease-in-out;
 }
 
@@ -71,6 +76,23 @@ body {
 
 .startButton {
   margin-bottom: 70px;
+  background: url('../images/start.png') 50% 50% no-repeat,
+              rgba(255,255,255, .3);
+}
+
+.startButton:hover {
+  background: url('../images/startA.png') 50% 50% no-repeat,
+              rgba(0,0,0, 1);
+}
+
+.statButton {
+  background: url('../images/stat.png') 50% 50% no-repeat,
+              rgba(255,255,255, .3);
+}
+
+.stButHover:hover {
+  background: url('../images/statA.png') 50% 50% no-repeat,
+              rgba(0,0,0, 1);
 }
 
 
@@ -79,6 +101,13 @@ body {
   bottom: 5%;
   left:50%;
   margin: 70px 0 0 -145px;
+  background: url('../images/stop.png') 50% 50% no-repeat,
+              rgba(255,255,255, .3);
+}
+
+.stopButton:hover {
+  background: url('../images/stopA.png') 50% 50% no-repeat,
+              rgba(0,0,0, 1);
 }
 
 
@@ -90,5 +119,39 @@ body {
   border: 2px solid #000;
   border-radius: 5px;
   color: #000;
-  transition: width .8s ease-in-out , height .8s ease-in-out;
+  transition: width .6s ease-in-out , height .6s ease-in-out;
+}
+
+
+.statContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.statContainer>p {
+  font-size: 18px;
+  font-family: "openSans";
+  margin: 0 0 20px 10px;
+}
+
+.statContainer>p>span {
+  margin: 0 0 0 10px;
+  font-family: "openSansB";
+}
+
+.closeStat {
+  position:absolute;
+  top:1%;
+  right: 1%;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: #000;
+  background:  url('../images/closeStat.png') center no-repeat;
+              rgba(255,255,255, 1);
+}
+
+.closeStat:hover {
+  cursor: pointer;
 }

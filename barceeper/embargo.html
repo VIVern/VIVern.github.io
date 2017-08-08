@@ -8,9 +8,16 @@
 </head>
 <body>
   <div class="container">
-    <div class="startButton buttons" data-status="active">start</div>
-    <div class="statButton buttons">stats</div>
-    <div class="stopButton buttons close">stop</div>
+    <div class="startButton buttons" data-status="active"></div>
+    <div class="statButton buttons stButHover">
+      <div class="statContainer hide">
+        <h2>Статистика</h2>
+        <p>Отработанные смены:<span class="shifts">0</span></p>
+        <p>Зарплата:<span class="salary">0</span></p>
+        <div class="closeStat"></div>
+      </div>
+    </div>
+    <div class="stopButton buttons close"></div>
   </div>
   <div class="exit"><a href="index.html"></a></div>
 <script src="js/mainEmbargo.js"></script>
