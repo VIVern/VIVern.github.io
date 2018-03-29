@@ -63,8 +63,17 @@ left: 150px;
   right: 265px;
 }
 #about {
+  position: absolute;
   text-align: center;
   font-size: 18px;
+  background: url(./images/boxBg.png);
+  background-size: cover;
+  width: inherit;
+  height: inherit;
+}
+
+#about h1 {
+  margin-top:50px;
 }
 
 #about p {
@@ -86,7 +95,6 @@ left: 150px;
 }
 #game{
   border: 3px solid black;
-  background: url(./images/bg2.jpg) no-repeat;
   background-size: cover;
   cursor: none;
   position: absolute;
@@ -190,7 +198,7 @@ left: 150px;
 }
 #nextLevel {
   position: absolute;
-  background: rgba(0,0,0, .85);
+  background: url(./images/boxBg.png);
   border: 3px solid black;
   z-index: 2;
   width: inherit;
@@ -239,6 +247,27 @@ left: 150px;
 #nextLevel .exit span:hover, #nextLevel .restart span:hover{
   cursor: url(./images/cursor-pointer.png), pointer;
   text-shadow: 2px 2px 6px #4eb236, -2px -2px 6px #4eb236, -2px 2px 6px #4eb236, 2px -2px 6px #4eb236;
+}
+
+
+.level1 {
+  background: url(./images/bg2.jpg) no-repeat;
+}
+
+.level2 {
+  background: url(./images/bg4.jpg) no-repeat;
+}
+
+.level3 {
+  background: url(./images/bg.jpg) no-repeat;
+}
+
+.level4 {
+  background: url(./images/bg3.jpg) no-repeat;
+}
+
+.level5 {
+  background: url(./images/bg5.jpg) no-repeat;
 }
 #gameComplite {
   position: absolute;

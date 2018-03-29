@@ -20449,7 +20449,26 @@ var gameState = {
 };
 
 function newLevel(ctx, canvas, player, imgPlayerStatic, portal, imgPortal, monsterArray, monsterShootArray, waves, levels) {
-
+  if (levels.level1) {
+    var bg = document.querySelector('#game');
+    bg.setAttribute('class', 'level1');
+  }
+  if (levels.level2) {
+    var _bg = document.querySelector('#game');
+    _bg.setAttribute('class', 'level2');
+  }
+  if (levels.level3) {
+    var _bg2 = document.querySelector('#game');
+    _bg2.setAttribute('class', 'level3');
+  }
+  if (levels.level4) {
+    var _bg3 = document.querySelector('#game');
+    _bg3.setAttribute('class', 'level4');
+  }
+  if (levels.level5) {
+    var _bg4 = document.querySelector('#game');
+    _bg4.setAttribute('class', 'level5');
+  }
   if (apearSpeed <= imgPlayerStatic.width) {
     portal = new _Portal2.default(ctx, imgPortal, 0, canvas.height / 2 - imgPortal.height / 2);
     portal.draw();
